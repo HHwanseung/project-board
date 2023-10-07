@@ -1,5 +1,6 @@
 package com.board.projectboard.domain;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -17,6 +18,7 @@ import java.util.Set;
 
 @Getter
 @ToString(callSuper = true)
+@Builder
 @Table(indexes = {
         @Index(columnList = "title"),
         @Index(columnList = "hashtag"),
